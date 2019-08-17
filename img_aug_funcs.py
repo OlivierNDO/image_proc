@@ -86,21 +86,8 @@ def img_add_stripe_noise(arr, stripe_perc = 0.05, stripe_direction = 'h'):
                         arr_copy[x][y][z] += noise[x][y][z]
     return arr_copy
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Execute Functions
+###############################################################################
 # Look at one cat picture before augmenting
 one_cat = np.array(load_img(cat_file_paths[20]))
 plt.imshow(one_cat)
@@ -128,27 +115,3 @@ plt.imshow(v_stripe_cat)
 # Add horizontal stripe
 h_stripe_cat = img_add_stripe_noise(one_cat, stripe_perc = 0.05, stripe_direction = 'h')
 plt.imshow(h_stripe_cat)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
